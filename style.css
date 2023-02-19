@@ -1,0 +1,124 @@
+body{
+    color: rgb(183, 183, 219);
+    background-color: #1c242c;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 5px;
+    margin: auto;
+ }
+
+ .contenedor{
+    background-color: #24303C;
+    border: 2px solid rgb(64, 64, 106);
+    border-radius: 4px;
+    width: 250px;
+    max-width: 100%;
+    margin: 300px;
+    margin-top: 150px;
+    margin-left: 250px;
+    margin-right: 250px;    
+    text-align: justify;
+    padding: 40px; 
+}
+
+.formulario_label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.formulario_grupo-input{
+    position: relative;
+}
+
+.formulario_input{
+    width: 98%;
+    border: 3px solid rgb(64, 64, 106);
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+    
+    
+}
+
+.formulario_input:focus{
+    outline: none;
+    border-color: rgb(255, 0, 0);
+
+}
+
+
+/*texto validacion. Si le quito la opacity se muestra pero no he sido 
+capaz de mostrarlo junto con la validación de erro*/
+
+.subtitulo_input-error{
+    font-size: 12px;
+    color: rgb(192, 79, 79);
+    display: none;
+    opacity: 0;
+}
+
+/*Colocación y estado de las imagenes. la opacity los oculta*/
+
+.icono_validacion-error{
+    position: absolute;
+    right: 0px;
+    bottom: 25px;
+    opacity: 0;
+    
+}
+.icono_validacion-suceso{
+    position: absolute;
+    right: 0px;
+    bottom: 25px;
+    opacity: 0;
+    z-index: 100;
+
+}
+
+.controlForma-correcto .icono_validacion-suceso{    
+    opacity: 1;
+}
+.controlForma-correcto .formulario_input{
+    border-color: rgb(10, 181, 10);
+}
+.controlForma-correcto .formulario_label{
+    border-color: rgb(10, 181, 10);
+}
+
+.controlForma-incorrecto .icono_validacion-error{    
+    opacity: 1;
+}
+.controlForma-incorrecto .formulario_label{
+    border-color: rgb(219, 54, 54);
+}
+.controlForma-incorrecto .formulario_input{
+    border-color: rgb(219, 54, 54);
+}
+
+
+.formaButton {
+    color: whitesmoke;
+    background-color: rgb(64, 64, 106);
+    border: 2px solid #1c242c;
+    border-radius: 4px;
+    border-color: #1c242c;
+    margin: auto;
+    margin-top: 20px;    
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 104%;
+    padding: 10px;
+}
+
+.formaButton:hover{
+    box-shadow: 0px 0px 3px rgb(187, 173, 200);
+}
+

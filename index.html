@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBA LAB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images">
+</head>
+<body>
+    <div class="contenedor">
+        <div> 
+            <h2>Create Account</h2>
+        </div>
+        <form id="formulario" class="formulario">            
+            <!--nombre-->
+            <div class="controlForma" id="camponombre">
+                <label for="nombre" class="fomulario_label">Nombre</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="nombre" id="nombre" />
+                    <img src="images/error-icon.svg" class="icono_validacion-error" id="error">
+                    <img src="images/success-icon.svg" class="icono_validacion-suceso" id="suceso"><br>
+
+                </div>
+                <p class="subtitulo_input-error">Sólo puede contener letras</p>
+            </div>
+            <!--email-->
+            <div class="controlForma" id="campoemail">
+                <label for="email" class="fomulario_label">Email</label>
+                <div class="formulario_grupo-input">
+                    <input type="email" class="formulario_input" name="email" id="email" />
+                    <img src="images/error-icon.svg" class="icono_validacion-error" id="error">
+                    <img src="images/success-icon.svg" class="icono_validacion-suceso" id="suceso"><br>
+
+                </div>
+                <p class="subtitulo_input-error">Email inválido</p>
+            </div>
+            <!--clave-->
+            <div class="controlForma" id="campoclave">
+                <label for="clave" class="fomulario_label">Clave</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario_input" name="clave" id="clave" />
+                    <img src="images/error-icon.svg" class="icono_validacion-error" id="error">
+                    <img src="images/success-icon.svg" class="icono_validacion-suceso" id="suceso"><br>
+
+                </div>
+                <p class="subtitulo_input-error">Debe contener al menos 8 caracteres</p>
+            </div>
+             <!--confirma la clave-->
+             <div class="controlForma" id="campoconficlave">
+                <label for="conficlave" class="fomulario_label">Confirme su clave</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario_input" name="conficlave" id="conficlave" />
+                    <img src="images/error-icon.svg" class="icono_validacion-error" id="error">
+                    <img src="images/success-icon.svg" class="icono_validacion-suceso" id="suceso"><br>
+
+                </div>
+                <p class="subtitulo_input-error">Las claves no coinciden</p>
+            </div>
+            <button type="submit" onclick="alert ('EL FORMULARIO NO FUNCIONA CORRECTAMENTE')" class="formaButton" id="enviar">ENVIAR</button>       
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
